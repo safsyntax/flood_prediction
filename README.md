@@ -1,6 +1,5 @@
-# flood_prediction
+# 🌧️ Flood Prediction using Machine Learning
 
-🌧️ Flood Prediction using Machine Learning
 This project aims to build a predictive model for estimating flood probability using historical data and machine learning techniques. Developed in Python, the model leverages linear regression and feature selection to forecast flooding based on various environmental indicators.
 
 📌 Project Overview
