@@ -1,59 +1,59 @@
-# 🌾 Smart Crop Prediction
+# 🌊 Flood Prediction using Machine Learning
 
-This project leverages machine learning to recommend the most suitable crops based on soil features, enabling smarter and more efficient farming practices. By combining advanced feature engineering, high-accuracy predictive modeling, and future-facing IoT integration, this project offers a robust framework for real-world agricultural decision support systems.
+This project focuses on building a supervised machine learning model to predict the probability of flooding based on environmental data. By leveraging feature selection, linear regression, and performance visualization, the model offers insight into flood risk forecasting.
 
 ## 📌 Project Overview
 
-With global agriculture facing increasing pressure from climate variability and soil degradation, smart solutions are vital to ensure sustainable crop yields. This project analyzes soil characteristics to predict crop suitability with high accuracy, using machine learning techniques validated by key performance metrics. Additionally, the project proposes integration with IoT devices for real-time soil monitoring and a seamless user experience through web and mobile platforms.
+Flooding is a significant environmental threat with serious consequences for infrastructure, agriculture, and public safety. Predictive modeling provides an early warning system to help mitigate flood impact. This project uses historical environmental data to train a linear regression model that forecasts flood probability.
 
 ## 🔧 Tools & Technologies
 
 - **Language**: Python  
-- **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`  
-- **Models**: Logistic Regression, Decision Tree, Random Forest, etc.  
-- **Validation**: Cross-validation, confusion matrix, and classification metrics  
-- **Proposed Tech**: IoT, Web/Mobile App Integration
+- **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`  
+- **Model**: Linear Regression  
+- **Validation**: 70:30 train-test split with 5-fold cross-validation  
+- **Metrics**: R² (R-squared), Mean Squared Error (MSE), Visual Forecasts  
 
 ## 🧠 Key Features
 
-### 1. Feature Engineering
-- Cleaned and transformed soil datasets for improved model interpretability.
-- Created new derived features to capture subtle soil-crop relationships.
+### 1. Data Preparation
+- Loaded and cleaned dataset using `pandas`.
+- Selected relevant features for model training and evaluation.
 
-### 2. Model Development
-- Trained multiple classification models to determine crop suitability.
-- Achieved up to **91% accuracy** using Random Forest and hyperparameter tuning.
+### 2. Feature Selection
+- Used **Recursive Feature Elimination (RFE)** to remove the 10 least impactful features from the initial set of 20.
+- Improved model interpretability and reduced overfitting risk.
 
-### 3. Model Evaluation
-- Rigorously assessed models with:
-  - **Cross-validation**
-  - **Precision, Recall, F1-score**
-  - **Confusion matrix** for class-specific analysis
+### 3. Model Training
+- Built a **Linear Regression** model using `scikit-learn`.
+- Applied a **70:30 train-test split** and validated with **5-fold cross-validation**.
 
-### 4. IoT & Application Proposal
-- Suggested integration with **IoT soil sensors** for real-time data acquisition.
-- Envisioned a user-friendly **web/mobile application** that delivers crop suggestions to farmers instantly.
+### 4. Evaluation
+- Evaluated performance using:
+  - **R-squared (R²)** to assess goodness of fit
+  - **Mean Squared Error (MSE)** to measure prediction error
+  - **Visualizations** to compare predicted vs. actual values
 
-## 📈 Results
+## 📈 Results & Insights
 
-- High-performing model with 91% prediction accuracy.
-- Consistent metrics across folds indicating good generalizability.
-- Visualization of model performance for stakeholder transparency.
+- The final model achieved moderate predictive performance.
+- Feature selection streamlined the model while retaining predictive strength.
+- Visualization helped highlight discrepancies and trends in predictions.
 
 ## 📁 Repository Contents
 
-- [`Smart_Crop_Prediction.ipynb`](https://github.com/safsyntax/smart_crop_prediction/blob/b06947cf6c91cbc909faec3b7af9b5809fea91b9/Smart_Crop_Prediction.ipynb): Full notebook with data preprocessing, EDA, model training and evaluation, and conceptual integration design.
+- [`Individual_ML_Exercise.ipynb`](https://github.com/safsyntax/flood_prediction/blob/ec5420f278fd9d9b8dd0e28fed11c49748e2263e/Individual_ML_Exercise.ipynb): Jupyter notebook containing code for data preparation, feature selection, model building, evaluation, and visualization.
 
 ## 🚀 Future Enhancements
 
-- Deploy model using Flask or FastAPI for online inference.
-- Develop a mobile interface using React Native or Flutter.
-- Integrate real-time soil sensors using Raspberry Pi or Arduino with cloud syncing.
+- Test non-linear models such as Random Forest, Gradient Boosting, or SVR.
+- Integrate real-time sensor data for live flood prediction.
+- Deploy the model via a web app or dashboard for accessibility.
 
 ## 🌍 Impact
 
-This project aims to empower farmers with data-driven insights, optimize land use, and support sustainable agriculture through technology.
+Accurate flood prediction models are essential for disaster preparedness and can significantly reduce economic and human loss. This model offers a foundation for future improvements and real-world applications.
 
 ## 📬 Contact
 
-For questions, collaboration, or feedback, feel free to reach out via [GitHub](https://github.com/safsyntax) or connect on [LinkedIn](https://www.linkedin.com/).
+For questions, suggestions, or collaboration, feel free to reach out via [GitHub](https://github.com/safsyntax) or connect on [LinkedIn](https://www.linkedin.com/in/safiya-joseph-39248b51).
