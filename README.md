@@ -42,7 +42,7 @@ Flooding is a significant environmental threat with serious consequences for inf
 
 ## 📁 Repository Contents
 
-- [`Individual_ML_Exercise.ipynb`](https://github.com/safsyntax/flood_prediction/blob/ec5420f278fd9d9b8dd0e28fed11c49748e2263e/Individual_ML_Exercise.ipynb): Jupyter notebook containing code for data preparation, feature selection, model building, evaluation, and visualization.
+- [`Individual_ML_Exercise.ipynb`](https://github.com/safsyntax/flood_prediction/blob/21e47901dfde2e13ea85a10e9b523982f1c27ced/Individual_ML_Exercise.ipynb): Jupyter notebook containing code for data preparation, feature selection, model building, evaluation, and visualization.
 
 ## 🚀 Future Enhancements
 
